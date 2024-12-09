@@ -3,7 +3,7 @@ import { FaRegCircleCheck, FaTruckFast } from "react-icons/fa6"
 import { FiX } from "react-icons/fi"
 import { IoCartOutline, IoPersonCircleOutline, IoPricetagsOutline } from "react-icons/io5"
 import Link from "next/link"
-import Button, { Btn, Product, SignUp } from "@/components/button"
+import Button, { Product, SignUp } from "@/components/button"
 import Image from "next/image"
 import { PiFlowerTulip } from "react-icons/pi"
 
