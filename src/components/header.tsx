@@ -2,6 +2,7 @@ import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import Link from "next/link";
 const Header = () => {
   return (
     <main className='w-[1350px] h-[132px] items-center'>
@@ -11,7 +12,7 @@ const Header = () => {
         </div>
         <h2 className='text-[#22202E] m-4 text-xl'>Avion</h2>
         <div className='flex m-4 gap-3 ml-4'>
-          <IoCartOutline className='size-5' />
+          <Link href="/cart"><IoCartOutline className='size-5' /></Link>
           <IoPersonCircleOutline className='size-5' />
         </div>
       </div>

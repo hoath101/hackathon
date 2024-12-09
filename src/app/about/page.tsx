@@ -24,12 +24,12 @@ function About() {
                     <div className='flex m-4 gap-3 mr-4 '>
                         <div className="text-[#22202E] flex gap-6 mr-8">
                             <Link href="/about">About us</Link>
-                            <Link href="/contact">Contact</Link>
-                            <Link href="/blog">Blog</Link>
+                            <ul>Contact</ul>
+                            <ul>Blog</ul>
                         </div>
                         <div className="flex gap-4 mt-1">
                             <CiSearch className='size-5' />
-                            <IoCartOutline className='size-5' />
+                            <Link href="/cart"><IoCartOutline className='size-5' /></Link>
                             <IoPersonCircleOutline className='size-5' />
                         </div>
                     </div>
@@ -70,13 +70,13 @@ function About() {
                     <Image src="/pictures/chair-1.jpg" alt='Table-pic' height={478} width={540}></Image>
                 </div>
             </div>
-            <div className='w-[1350px] h-[500px] flex justify-center ml-4'>
-                <div>
-                    <Image src="/pictures/jugar.jpg" alt="jugar" width={720} height={603}></Image>
+            <div className='w-[1350px] h-[500px] flex justify-center ml-4 mb-6'>
+                <div className="">
+                    <Image src="/pictures/sofa-1.jpg" alt="jugar" width={720} height={603} className="max-h-[500px] max-w-[700px]"></Image>
                 </div>
                 <div className='w-[650px] h-[603px] ml-20 text-[#505977]'>
-                    <p className='text-2xl mb-6'>From a studio in London to a global brand with <br />
-                        over 400 outlets</p>
+                    <p className='text-2xl mb-6'>Our service isn’t just personal, it’s actually <br />
+                    hyper personally exquisite</p>
                     <p className='text-sm'>When we started Avion, the idea was simple. Make high quality furniture <br /> affordable and available
                         for the mass market
                     </p>
@@ -113,7 +113,7 @@ function About() {
                     <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>We use 100% recycled packaging to ensure our footprint is manageable</p>
                 </div>
             </div>
-            <div className='w-[1273px] h-[364px] bg-white mt-10'>
+            <div className='w-[1273px] h-[300px] bg-white mt-10'>
                 <div className='flex justify-center text-[#2A254B] text-3xl font-thin ml-20'>
                     <p>Join the club and get the benefits</p>
                 </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Button = () => {
@@ -32,10 +33,27 @@ export const Product = () =>{
   return(
       <div>
       <button className='w-[170px] h-[56px] text-[#2A254B] bg-[#F9F9F9]'>
-      View our products
+        <Link href="/products">View our products</Link>
       </button>
   </div>
   )
 }
-
+export const AddCart = () =>{
+  return(
+      <div>
+      <button className='w-[143px] h-[56px] bg-[#2A254B] text-white'>
+        <Link href="/products">Add to cart</Link>
+      </button>
+  </div>
+  )
+}
+export const CheckOut = () => {
+  return (
+    <div>
+        <button className='w-[172px] h-[56px] bg-[#2A254B] text-[#F9F9F9] mb-5'>
+        Go to checkout
+        </button>
+    </div>
+  )
+}
 export default Button
