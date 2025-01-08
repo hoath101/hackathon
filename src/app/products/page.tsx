@@ -1,4 +1,5 @@
 import { AddCart, Btn, SignUp } from "@/components/button"
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import Image from "next/image"
 import Link from "next/link"
 import { CiSearch } from "react-icons/ci"
@@ -6,38 +7,65 @@ import { FaRegCircleCheck, FaTruckFast } from "react-icons/fa6"
 import { FiX } from "react-icons/fi"
 import { IoCartOutline, IoPersonCircleOutline, IoPricetagsOutline } from "react-icons/io5"
 import { PiFlowerTulip } from "react-icons/pi"
+import { RxHamburgerMenu } from "react-icons/rx"
 
 const Products = () => {
     return (
-        <main>
-            <div className='w-[1350px] h-[132px] items-center'>
-                <div className=" h-[41px] bg-[#2A254B] text-white flex justify-end gap-4 text-sm">
-                    <FaTruckFast className="fill-white mt-4" />
-                    <p className="mt-3 mr-80">
-                        Free delivery on all orders over £50 with code easter checkout
-                    </p>
-                    <FiX className=" fill-white text-xl mt-3 ml-10 mr-10" />
-                </div>
-                <div className='flex justify-between'>
-                    <h2 className='text-[#22202E] m-4 text-xl ml-10'>Avion</h2>
-                    <div className='flex justify-center gap-9 m-4 mr-10'>
-                        <ul className='text-[#726E8D]'>Plantpots</ul>
-                        <ul className='text-[#726E8D]'>Ceramics</ul>
-                        <ul className='text-[#726E8D]'>Tables</ul>
-                        <ul className='text-[#726E8D]'>Chairs</ul>
-                        <ul className='text-[#726E8D]'>Crokery</ul>
-                        <ul className='text-[#726E8D]'>Tableware</ul>
-                        <ul className='text-[#726E8D]'>Cutlery</ul>
+        <main className="overflow-hidden">
+            <div className="hidden lg:block">
+                <div className='w-[1350px] h-[132px] items-center'>
+                    <div className=" h-[41px] bg-[#2A254B] text-white flex justify-end gap-4 text-sm">
+                        <FaTruckFast className="fill-white mt-4" />
+                        <p className="mt-3 mr-80">
+                            Free delivery on all orders over £50 with code easter checkout
+                        </p>
+                        <FiX className=" fill-white text-xl mt-3 ml-10 mr-10" />
                     </div>
-                    <div className='flex m-4 gap-3 mr-4 '>
-                        <div className="flex gap-4 ">
-                            <CiSearch className='size-5' />
-                            <Link href="/cart"><IoCartOutline className='size-5' /></Link>
-                            <IoPersonCircleOutline className='size-5' />
+                    <div className='flex justify-between'>
+                        <h2 className='text-[#22202E] m-4 text-xl ml-10'>Avion</h2>
+                        <div className='flex justify-center gap-9 m-4 mr-10'>
+                            <ul className='text-[#726E8D]'>Plantpots</ul>
+                            <ul className='text-[#726E8D]'>Ceramics</ul>
+                            <ul className='text-[#726E8D]'>Tables</ul>
+                            <ul className='text-[#726E8D]'>Chairs</ul>
+                            <ul className='text-[#726E8D]'>Crokery</ul>
+                            <ul className='text-[#726E8D]'>Tableware</ul>
+                            <ul className='text-[#726E8D]'>Cutlery</ul>
+                        </div>
+                        <div className='flex m-4 gap-3 mr-4 '>
+                            <div className="flex gap-4 ">
+                                <CiSearch className='size-5' />
+                                <Link href="/cart"><IoCartOutline className='size-5' /></Link>
+                                <IoPersonCircleOutline className='size-5' />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="block mt-3 mb-4 mx-4 lg:hidden">
+            <div className="flex justify-between ">
+                <h2 className="text-3xl text-[#22202E] ml-7">
+                    Avion
+                </h2>
+                <div className="flex gap-5 mr-4">
+                    <CiSearch className="size-7 mt-1"/>
+                    <Sheet>
+                        <SheetTrigger><RxHamburgerMenu className="size-6"/>
+                            <SheetContent className="w-[250px]">
+                                <SheetTitle className='hidden'></SheetTitle>
+                                <ul className='grid grid-col-1 justify-center items-center mt-7 gap-5'>
+                                    <Link href="/">Home</Link>
+                                    <Link href="/about">About</Link>
+                                    <Link href="/products">Products</Link>
+                                    <Link href="/cart"><IoCartOutline className="size-5" /></Link>
+                                </ul>
+                            </SheetContent>
+                        </SheetTrigger>
+                    </Sheet>
+                </div>
+            </div>
+            </div>
+            {/* Main Page Starts from here */}
             <div className='w-[1350px] h-[500px] flex justify-center ml-4 mb-6'>
                 <div className="">
                     <Image src="/pictures/chair-2.jpg" alt="jugar" width={759} height={603} className="max-h-[500px] max-w-[700px] ml-4"></Image>
