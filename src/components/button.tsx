@@ -42,7 +42,7 @@ export const AddCart = () =>{
   return(
       <div>
       <button className='w-[143px] h-[56px] bg-[#2A254B] text-white'>
-        <Link href="/products">Add to cart</Link>
+        <Link href="/cart">Add to cart</Link>
       </button>
   </div>
   )

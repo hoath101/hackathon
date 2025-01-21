@@ -23,11 +23,11 @@ const Header = () => {
           <h2 className='text-[#22202E] m-4 text-xl'>Avion</h2>
           <div className='flex m-4 gap-3 ml-4'>
             <Link href="/cart"><IoCartOutline className='size-5' /></Link>
-            <IoPersonCircleOutline className='size-5' />
+            <IoPersonCircleOutline className='size-5 cursor-pointer' />
           </div>
         </div>
         <hr />
-        <div className='flex justify-center gap-9 m-4'>
+        <div className='flex justify-center gap-9 m-4 cursor-pointer'>
           <ul className='text-[#726E8D]'>Plantpots</ul>
           <ul className='text-[#726E8D]'>Ceramics</ul>
           <ul className='text-[#726E8D]'>Tables</ul>

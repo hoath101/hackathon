@@ -250,7 +250,7 @@ function About() {
             </div>
             </div>
             {/* For Mobile Screen */}
-            <div>
+            <div className="block lg:hidden">
             <div className=' h-[260px] bg-white mt-10'>
                 <div className='flex justify-center text-[#2A254B] text-2xl  ml-4'>
                     <p>Join the club and get the benefits</p>
