@@ -67,7 +67,7 @@ const Products = () => {
             </div>
             </div>
             {/* Main Page Starts from here */}
-            {/* <div className='w-[1350px] h-[500px] flex justify-center ml-4 mb-6'>
+             <div className='w-[1350px] h-[500px] flex justify-center ml-4 mb-6'>
                 <div className="">
                     <Image src="/pictures/chair-2.jpg" alt="jugar" width={759} height={603} className="max-h-[500px] max-w-[700px] ml-4"></Image>
                 </div>
@@ -128,8 +128,7 @@ const Products = () => {
                         <AddCart />
                     </div>
                 </div>
-            </div> */}
-            <Shop/>
+            </div> 
             <div className="w-[1440px] h-[761px]">
                 <h2 className="text-3xl ml-10 mt-20">You might also like</h2>
                 <div className='flex gap-6 mt-8 ml-10'>
