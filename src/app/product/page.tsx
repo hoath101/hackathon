@@ -1,5 +1,4 @@
 import { AddCart, Btn, SignUp } from "@/components/button"
-import Shop from "@/components/shop"
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import Image from "next/image"
 import Link from "next/link"
