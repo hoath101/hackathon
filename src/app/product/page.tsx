@@ -9,6 +9,7 @@ import { IoCartOutline, IoPersonCircleOutline, IoPricetagsOutline } from "react-
 import { PiFlowerTulip } from "react-icons/pi"
 import { RxHamburgerMenu } from "react-icons/rx"
 
+
 const Products = () => {
     return (
         <main className="overflow-hidden">
