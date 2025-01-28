@@ -9,28 +9,38 @@ This endpoint retrieves a list of products available in the store. Each product 
 [
   {
     "name": "The Poplar suede sofa",
+    
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    
     "image": "https://cdn.sanity.io/images/ri847jqu/production/9b6a4fc8c65bbb4e5793fb0e1116b510d73dc9e8-630x375.png",
+    
     "_id": "65453ffd-e476-4b6b-a388-7e3de1bb632a",
+    
     "features": [
         "Premium material",
         "Handmade upholster",
         "Quality timeless classic"
     ],
+
     "dimensions": {
         "width": "110cm",
         "height": "110cm",
         "depth": "50cm"
     },
+    
     "category": {
         "name": "Tableware",
         "slug": "tableware"
     },
+    
     "price": 980,
+    
     "tags": [
         "popular products"
     ]
+
   }
+  
 ]
 
 ## Importing Api data into my sanity project.
