@@ -10,6 +10,7 @@ This endpoint retrieves a list of products available in the store. Each product 
 
 [  
   { 
+    
     "name": "The Poplar suede sofa",
     
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
