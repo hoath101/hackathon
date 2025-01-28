@@ -2,7 +2,7 @@
 
 ## Given API Base URL:
 
-https://hackathon-apis.vercel.app/api/products
+``https://hackathon-apis.vercel.app/api/products``
 
 ## Description:
 
@@ -10,10 +10,7 @@ This endpoint retrieves a list of products available in the store. Each product 
 
 ## Example Response:
 
-
-
-[
-  
+[  
   {
 
     "name": "The Poplar suede sofa",
@@ -44,12 +41,9 @@ This endpoint retrieves a list of products available in the store. Each product 
     "price": 980,
     
     "tags": [
-        "popular products"
-    
-    ]
-  
+        "popular products"    
+    ] 
   }
-
 ]
 
 
@@ -64,4 +58,6 @@ git clone https://github.com/bilalmk/hackathon-template02.git
 note it is not necessary to clone this repo in your project.I suggest you to clone
 this repo outside of your actual project.
 
-## 2. 
+## 2. Navigate to the sanity-migration folder and run the following command
+
+ ``npm install``
