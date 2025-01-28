@@ -66,5 +66,7 @@ Open the command prompt in ``sanity-migration`` floder and run the following com
 ## 3. create a .env in sanity-migration folder and define following three variables and values
 
 __projectId: Your Sanity project ID.__
-dataset: Your Sanity dataset name
-token: Your Sanity token (if required).
+
+__dataset: Your Sanity dataset name__
+
+__token: Your Sanity token (if required).__
