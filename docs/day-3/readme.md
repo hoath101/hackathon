@@ -1,17 +1,15 @@
 ## Day_3 Data_Migration Template_2.
 ## Given API Base URL:
 
-https://hackathon-apis.vercel.app/api/products
+(https://hackathon-apis.vercel.app/api/products)
 
 ## Description:
 This endpoint retrieves a list of products available in the store. Each product includes detailed information such as the product's name, description, price, category, initial quantity, tags, and an image URL. The response provides an array of products in JSON format.
 
 ## Example Response:
 
-[
-  
-  {
-    
+[  
+  { 
     "name": "The Poplar suede sofa",
     
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
@@ -52,6 +50,6 @@ To import api data in my sanity projects i followed these steps.
 
 ## 1. cloned this repo https://github.com/bilalmk/hackathon-template02.git using following command:
 
-**git clone https://github.com/bilalmk/hackathon-template02.git**
+git clone https://github.com/bilalmk/hackathon-template02.git
 
 note it is not necessary to clone this repo in your project you can clone this repo anywhere you want.
