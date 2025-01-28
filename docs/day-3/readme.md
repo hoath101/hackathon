@@ -37,6 +37,6 @@ This endpoint retrieves a list of products available in the store. Each product 
 To import api data in my sanity projects i followed these steps.
 
 ## 1. cloned this repo https://github.com/bilalmk/hackathon-template02.git using following command:
-git clone https://github.com/bilalmk/hackathon-template02.git
+** git clone https://github.com/bilalmk/hackathon-template02.git **
 
 note it is not necessary to clone this repo in your project you can clone this repo anywhere you want.
