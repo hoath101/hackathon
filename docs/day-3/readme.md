@@ -53,11 +53,18 @@ To import api data in my sanity projects i followed these steps.
 
 ## 1. cloned this repo https://github.com/bilalmk/hackathon-template02.git using following command:
 
-git clone https://github.com/bilalmk/hackathon-template02.git
+``git clone https://github.com/bilalmk/hackathon-template02.git``
 
 note it is not necessary to clone this repo in your project.I suggest you to clone
 this repo outside of your actual project.
 
 ## 2. Navigate to the sanity-migration folder and run the following command
 
+Open the command prompt in ``sanity-migration`` floder and run the following command:
  ``npm install``
+
+## 3. create a .env in sanity-migration folder and define following three variables and values
+
+__projectId: Your Sanity project ID.__
+dataset: Your Sanity dataset name
+token: Your Sanity token (if required).
