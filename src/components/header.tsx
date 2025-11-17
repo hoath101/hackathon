@@ -14,7 +14,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 
 const Header = () => {
   return (
-    <main className='max-w-[1300px] h-[132px] items-center overflow-hidden'>
+    <main className=' h-[132px] items-center overflow-hidden'>
       <div className='hidden lg:block'>
         <div className='flex justify-between'>
           <div className='m-4 '>

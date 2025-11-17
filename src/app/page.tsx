@@ -9,7 +9,7 @@ import { Ceramics } from '@/components/sanityProducts';
 
 const Home = () => {
   return (
-    <main className='max-w-max mx-auto p-2 overflow-hidden'>
+    <main className='max-w-maax mx-auto p-2 overflow-hidden'>
       <Header />
       <div className='flex justify-center items-center'>
         <div className=''>
@@ -39,7 +39,7 @@ const Home = () => {
       </div>
 
       <h2 className='text-center text-xl text-[#2A254B] mt-14'>What makes our brand different</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 ml-6">
   <div className="flex flex-col ml-4 w-[300px]">
     <FaTruckFast className="text-[#2A254B] text-3xl" />
     <h3 className="mt-4 text-[#2A254B]">Next day as standard</h3>

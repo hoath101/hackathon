@@ -4,8 +4,8 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <main>
-            <div className='hidden lg:block'>
-                <div className='max-w-[1450px] h-[380px] bg-[#2A254B] text-white text-sm '>
+            <div className='hidden lg:block overflow-hidden'>
+                <div className='max-w-screen-2xl h-[380px] bg-[#2A254B] text-white text-sm'>
                     <div className='flex justify-around gap-6'>
                         <div className='mt-10 mb-20'>
                             <ul>Menu</ul>

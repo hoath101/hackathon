@@ -15,7 +15,7 @@ function About() {
     return (
         <main className="overflow-hidden">
             <div className="hidden lg:block">
-                <div className='w-[1350px] h-[132px] items-center '>
+                <div className=' h-[132px] items-center '>
                     <div className=" h-[41px] bg-[#2A254B] text-white flex justify-end gap-4 text-sm">
                         <FaTruckFast className="fill-white mt-4" />
                         <p className="mt-3 mr-80">
@@ -74,11 +74,11 @@ function About() {
                 </div>
             </div>
             {/* Main Page Start from here */}
-            <div className="hidden lg:block w-[1440px] h-[220px]">
-                <div className="flex justify-around mt-20 mr-10">
+            <div className="hidden lg:block  h-[220px]">
+                <div className="flex justify-around mt-20 ">
                     <p className="text-3xl text-[#2A254B]">A brand built on the love of craftmanship,<br />
                         quality and outstanding customer service</p>
-                    <div className="mr-20">
+                    <div className="">
                         <Product />
                     </div>
                 </div>
@@ -95,7 +95,7 @@ function About() {
             </div>
             {/* New Section Starts From here */}
             <div className="hidden lg:block">
-                <div className='w-[1280px] h-[584] flex justify-center gap-3'>
+                <div className=' h-[584px] flex justify-center gap-3'>
                     <div className='bg-[#2A254B] h-[478px] w-[630px]'>
                         <p className='text-white text-3xl font-extralight mt-10 ml-12'>
                             It started with a small idea
@@ -132,11 +132,11 @@ function About() {
             </div>
             {/* New Section Starts From here */}
             <div className="hidden lg:block">
-                <div className='w-[1350px] h-[500px] flex justify-center ml-4 mb-6'>
+                <div className=' h-[500px] flex justify-end mb-6 gap-16'>
                     <div className="">
                         <Image src="/pictures/sofa-1.jpg" alt="jugar" width={720} height={603} className="max-h-[500px] max-w-[700px]"></Image>
                     </div>
-                    <div className='w-[650px] h-[603px] ml-20 text-[#505977]'>
+                    <div className='w-[650px] h-[603px]  text-[#505977]'>
                         <p className='text-2xl mb-6'>Our service isn’t just personal, it’s actually <br />
                             hyper personally exquisite</p>
                         <p className='text-sm'>When we started Avion, the idea was simple. Make high quality furniture <br /> affordable and available
@@ -178,24 +178,24 @@ function About() {
             </div>
             {/* New Section starts from here */}
             <div className="hidden lg:block">
-                <div className='flex gap-10 ml-28 mr-24'>
-                    <div className='w-[305px] h-[220px]'>
+                <div className='flex gap-10 ml-10 mr-24'>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
                         <FaTruckFast className='ml-10 mt-10 size-6' />
                         <h3 className='ml-10 mt-4 text-[#2A254B]'>Next day as standard</h3>
                         <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>Order before 3pm and get your order the next day as standard</p>
                     </div>
-                    <div className='w-[305px] h-[220px]'>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
                         <FaRegCircleCheck className='ml-10 mt-10 size-6' />
                         <h3 className='ml-10 mt-4 text-[#2A254B]'>Made by true artisans</h3>
                         <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>Handmade crafted goods made with
                             real passion and craftmanship</p>
                     </div>
-                    <div className='w-[305px] h-[220px] '>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
                         <IoPricetagsOutline className='ml-10 mt-10 size-6' />
                         <h3 className='ml-10 mt-4 text-[#2A254B]'>Unbeatable prices</h3>
                         <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>For our materials and quality you won’t find better prices anywhere</p>
                     </div>
-                    <div className='w-[305px] h-[220px] '>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
                         <PiFlowerTulip className='ml-10 mt-10 size-6' />
                         <h3 className='ml-10 mt-4 text-[#2A254B]'>Recycled packaging</h3>
                         <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>We use 100% recycled packaging to ensure our footprint is manageable</p>
@@ -231,7 +231,7 @@ function About() {
             </div>
             {/* Last Section Finally */}
             <div className="hidden lg:block">
-            <div className='w-[1273px] h-[300px] bg-white mt-10'>
+            <div className=' h-[300px] bg-white mt-10'>
                 <div className='flex justify-center text-[#2A254B] text-3xl font-thin ml-20'>
                     <p>Join the club and get the benefits</p>
                 </div>
