@@ -5,7 +5,6 @@ import Button, { Btn, SignUp } from '@/components/button'
 import { FaRegCircleCheck, FaTruckFast } from 'react-icons/fa6';
 import { IoPricetagsOutline } from 'react-icons/io5';
 import { PiFlowerTulip } from 'react-icons/pi';
-import { Ceramics } from '@/components/sanityProducts';
 
 const Home = () => {
   return (
