@@ -44,135 +44,129 @@ const Products = () => {
                 </div>
             </div>
             <div className="block mt-3 mb-4 mx-4 lg:hidden">
-            <div className="flex justify-between ">
-                <h2 className="text-3xl text-[#22202E] ml-7">
-                    Avion
-                </h2>
-                <div className="flex gap-5 mr-4">
-                    <CiSearch className="size-7 mt-1"/>
-                    <Sheet>
-                        <SheetTrigger><RxHamburgerMenu className="size-6"/>
-                            <SheetContent className="w-[250px]">
-                                <SheetTitle className='hidden'></SheetTitle>
-                                <ul className='grid grid-col-1 justify-center items-center mt-7 gap-5'>
-                                    <Link href="/">Home</Link>
-                                    <Link href="/about">About</Link>
-                                    <Link href="/products">Products</Link>
-                                    <Link href="/cart"><IoCartOutline className="size-5" /></Link>
-                                </ul>
-                            </SheetContent>
-                        </SheetTrigger>
-                    </Sheet>
+                <div className="flex justify-between ">
+                    <h2 className="text-3xl text-[#22202E] ml-7">
+                        Avion
+                    </h2>
+                    <div className="flex gap-5 mr-4">
+                        <CiSearch className="size-7 mt-1" />
+                        <Sheet>
+                            <SheetTrigger><RxHamburgerMenu className="size-6" />
+                                <SheetContent className="w-[250px]">
+                                    <SheetTitle className='hidden'></SheetTitle>
+                                    <ul className='grid grid-col-1 justify-center items-center mt-7 gap-5'>
+                                        <Link href="/">Home</Link>
+                                        <Link href="/about">About</Link>
+                                        <Link href="/products">Products</Link>
+                                        <Link href="/cart"><IoCartOutline className="size-5" /></Link>
+                                    </ul>
+                                </SheetContent>
+                            </SheetTrigger>
+                        </Sheet>
+                    </div>
                 </div>
-            </div>
             </div>
             {/* Main Page Starts from here */}
-             <div className=' h-[500px] flex justify-center ml-4 mb-6'>
-                <div className="">
-                    <Image src="/pictures/chair-2.jpg" alt="jugar" width={759} height={603} className="max-h-[500px] max-w-[700px] ml-4"></Image>
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 px-4 mb-10">
+                <div className="flex justify-center">
+                    <Image
+                        src="/pictures/chair-2.jpg"
+                        alt="jugar"
+                        width={759}
+                        height={603}
+                        className="w-full max-w-[700px] max-h-[500px] h-auto rounded-md lg:w-[470px] lg:ml-40"
+                    />
                 </div>
-                <div className='w-[602px] h-[657px] ml-20 '>
-                    <div className="text-[#2A254B]">
-                        <p className='text-2xl mb-8'>The Dandy Chair <br />
-                            <span>£250</span>
-                        </p>
-                    </div>
-                    <div>
-                        <h2 className="mb-4 text-[#2A254B]">Description</h2>
-                        <p className="mb-4 text-[#505977] text-sm w-[450px]">
-                            A timeless design, with premium materials features as one of our most popular and iconic pieces.
-                            The dandy chair is perfect for any stylish <br /> living space with beech legs and lambskin leather upholstery.
-                        </p>
+                <div className="w-full max-w-xl text-[#2A254B]">
+                    <p className="text-2xl mb-4">
+                        The Dandy Chair <br />
+                        <span className="text-lg text-[#505977]">£250</span>
+                    </p>
+                    <h2 className="mb-2">Description</h2>
+                    <p className="mb-4 text-[#505977] text-sm">
+                        A timeless design, with premium materials features as one of our most popular
+                        and iconic pieces. The dandy chair is perfect for any stylish living space with
+                        beech legs and lambskin leather upholstery.
+                    </p>
+                    <ul className="mb-6 space-y-1">
                         <li className="text-[#505977] text-sm">Premium material</li>
                         <li className="text-[#505977] text-sm">Handmade upholstery</li>
                         <li className="text-[#505977] text-sm">Quality timeless classic</li>
-                    </div>
-                    <div className="w-[602px] h-[134px] mt-8">
-                        <h4 className="text-[#2A254B] text-sm">Dimensions</h4>
-                        <div className="flex gap-10 text-sm mt-5">
+                    </ul>
+                    <div className="mb-8">
+                        <h4 className="text-sm">Dimensions</h4>
+                        <div className="grid grid-cols-3 gap-4 text-sm mt-3">
                             <div>
-                                <h4 className="text-[#2A254B]">
-                                    Height
-                                </h4>
-                                <p className="text-[#505977] mt-3">
-                                    110cm
-                                </p>
+                                <h4>Height</h4>
+                                <p className="text-[#505977] mt-1">110cm</p>
                             </div>
                             <div>
-                                <h4 className="text-[#2A254B]">
-                                    Width
-                                </h4>
-                                <p className="text-[#505977] mt-3">
-                                    75cm
-                                </p>
+                                <h4>Width</h4>
+                                <p className="text-[#505977] mt-1">75cm</p>
                             </div>
                             <div>
-                                <h4 className="text-[#2A254B]">
-                                    Depth
-                                </h4>
-                                <p className="text-[#505977] mt-3">
-                                    50cm
-                                </p>
+                                <h4>Depth</h4>
+                                <p className="text-[#505977] mt-1">50cm</p>
                             </div>
                         </div>
                     </div>
-                    <div className="flex w-[602px] h-[115px] border-[#CAC6DA] gap-28">
-                        <div className="w-[209px] h-[46px] flex gap-4 ">
-                            <p className="text-[#2A254B]">Amount</p>
-                            <div className="w-[122px] h-[46px] fill-[#F9F9F9] flex justify-between">
-                                <p className="text-[#CAC6DA] ml-4">-</p>
-                                <p className="text-[#2A254B]"> 1</p>
-                                <p className="text-[#CAC6DA] mr-4"> +</p>
+                    <div className="flex items-center justify-between border-t pt-4">
+                        <div className="flex items-center gap-4">
+                            <p>Amount</p>
+                            <div className="w-36 h-10 bg-[#F9F9F9] flex justify-between items-center px-4 rounded">
+                                <span className="text-[#CAC6DA] cursor-pointer">-</span>
+                                <span>1</span>
+                                <span className="text-[#CAC6DA] cursor-pointer">+</span>
                             </div>
                         </div>
                         <AddCart />
                     </div>
                 </div>
-            </div> 
+            </div>
             {/* For Mobile Screen */}
             <div className="block lg:hidden ">
                 <h2 className="text-3xl ml-10 mt-20">You might also like</h2>
                 <div className='grid grid-cols-2 mt-4 ml-4 space-y-4'>
                     <div className="text-[#2A254B] mt-4">
-                        <Image 
-                        src='/pictures/table.jpg'
-                        alt="table"
-                        height={250}
-                        width={220}
-                        className="h-[250px] w-[220px]"
+                        <Image
+                            src='/pictures/table.jpg'
+                            alt="table"
+                            height={250}
+                            width={220}
+                            className="h-[250px] w-[220px]"
                         />
                         <p className="mt-3">The Dandy chair</p>
                         <span>£250</span>
                     </div>
                     <div className="text-[#2A254B]">
-                        <Image 
-                        src='/pictures/vase.jpg'
-                        alt="table"
-                        height={250}
-                        width={220}
-                        className="h-[250px] w-[220px]"
+                        <Image
+                            src='/pictures/vase.jpg'
+                            alt="table"
+                            height={250}
+                            width={220}
+                            className="h-[250px] w-[220px]"
                         />
                         <p className="mt-3">Rustic Vase Set</p>
                         <span>£155</span>
                     </div>
                     <div className="text-[#2A254B]">
-                        <Image 
-                        src='/pictures/vase-1.jpg'
-                        alt="table"
-                        height={250}
-                        width={220}
-                        className="h-[250px] w-[220px]"
+                        <Image
+                            src='/pictures/vase-1.jpg'
+                            alt="table"
+                            height={250}
+                            width={220}
+                            className="h-[250px] w-[220px]"
                         />
                         <p className="mt-3">The Silky Vase</p>
                         <span>£125</span>
                     </div>
                     <div className="text-[#2A254B]">
-                        <Image 
-                        src='/pictures/lamp.jpg'
-                        alt="table"
-                        height={250}
-                        width={220}
-                        className="h-[250px] w-[220px]"
+                        <Image
+                            src='/pictures/lamp.jpg'
+                            alt="table"
+                            height={250}
+                            width={220}
+                            className="h-[250px] w-[220px]"
                         />
                         <p className="mt-3">The Lucy Lamp</p>
                         <span>£399</span>
@@ -187,45 +181,45 @@ const Products = () => {
                 <h2 className="text-3xl ml-28 mt-20">You might also like</h2>
                 <div className='flex  justify-center gap-8 mt-8'>
                     <div className="text-[#2A254B]">
-                        <Image 
-                        src='/pictures/table.jpg'
-                        alt="table"
-                        height={375}
-                        width={305}
-                        className="h-[475px] w-[305px]"
+                        <Image
+                            src='/pictures/table.jpg'
+                            alt="table"
+                            height={375}
+                            width={305}
+                            className="h-[475px] w-[305px]"
                         />
                         <p className="mt-4">The Dandy chair</p>
                         <span className='mt-3'>£250</span>
                     </div>
                     <div className="text-[#2A254B]">
-                        <Image 
-                        src='/pictures/vase.jpg'
-                        alt="table"
-                        height={375}
-                        width={305}
-                        className="h-[475px] w-[305px]"
+                        <Image
+                            src='/pictures/vase.jpg'
+                            alt="table"
+                            height={375}
+                            width={305}
+                            className="h-[475px] w-[305px]"
                         />
                         <p className="mt-4">Rustic Vase Set</p>
                         <span className='mt-3'>£155</span>
                     </div>
                     <div className="text-[#2A254B]">
-                        <Image 
-                        src='/pictures/vase-1.jpg'
-                        alt="table"
-                        height={375}
-                        width={305}
-                        className="h-[475px] w-[305px]"
+                        <Image
+                            src='/pictures/vase-1.jpg'
+                            alt="table"
+                            height={375}
+                            width={305}
+                            className="h-[475px] w-[305px]"
                         />
                         <p className="mt-4">The Silky Vase</p>
                         <span className='mt-3'>£125</span>
                     </div>
                     <div className="text-[#2A254B]">
-                        <Image 
-                        src='/pictures/lamp.jpg'
-                        alt="table"
-                        height={375}
-                        width={305}
-                        className="h-[475px] w-[305px]"
+                        <Image
+                            src='/pictures/lamp.jpg'
+                            alt="table"
+                            height={375}
+                            width={305}
+                            className="h-[475px] w-[305px]"
                         />
                         <p className="mt-4">The Lucy Lamp</p>
                         <span className='mt-3'>£399</span>
@@ -266,27 +260,27 @@ const Products = () => {
             {/* For Large Screen */}
             <div className="hidden lg:block">
                 <div className='flex gap-10 ml-28 mr-24'>
-                <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
-                    <FaTruckFast className='ml-10 mt-10 size-6' />
-                    <h3 className='ml-10 mt-4 text-[#2A254B]'>Next day as standard</h3>
-                    <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>Order before 3pm and get your order the next day as standard</p>
-                </div>
-                <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
-                    <FaRegCircleCheck className='ml-10 mt-10 size-6' />
-                    <h3 className='ml-10 mt-4 text-[#2A254B]'>Made by true artisans</h3>
-                    <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>Handmade crafted goods made with
-                        real passion and craftmanship</p>
-                </div>
-                <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
-                    <IoPricetagsOutline className='ml-10 mt-10 size-6' />
-                    <h3 className='ml-10 mt-4 text-[#2A254B]'>Unbeatable prices</h3>
-                    <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>For our materials and quality you won’t find better prices anywhere</p>
-                </div>
-                <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
-                    <PiFlowerTulip className='ml-10 mt-10 size-6' />
-                    <h3 className='ml-10 mt-4 text-[#2A254B]'>Recycled packaging</h3>
-                    <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>We use 100% recycled packaging to ensure our footprint is manageable</p>
-                </div>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
+                        <FaTruckFast className='ml-10 mt-10 size-6' />
+                        <h3 className='ml-10 mt-4 text-[#2A254B]'>Next day as standard</h3>
+                        <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>Order before 3pm and get your order the next day as standard</p>
+                    </div>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
+                        <FaRegCircleCheck className='ml-10 mt-10 size-6' />
+                        <h3 className='ml-10 mt-4 text-[#2A254B]'>Made by true artisans</h3>
+                        <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>Handmade crafted goods made with
+                            real passion and craftmanship</p>
+                    </div>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
+                        <IoPricetagsOutline className='ml-10 mt-10 size-6' />
+                        <h3 className='ml-10 mt-4 text-[#2A254B]'>Unbeatable prices</h3>
+                        <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>For our materials and quality you won’t find better prices anywhere</p>
+                    </div>
+                    <div className='w-[305px] h-[220px] bg-[#F9F9F9]'>
+                        <PiFlowerTulip className='ml-10 mt-10 size-6' />
+                        <h3 className='ml-10 mt-4 text-[#2A254B]'>Recycled packaging</h3>
+                        <p className='ml-10 mt-2 text-sm mr-10 text-[#2A254B]'>We use 100% recycled packaging to ensure our footprint is manageable</p>
+                    </div>
                 </div>
             </div>
             <div className='h-[300px] bg-white mt-10'>
@@ -298,8 +292,11 @@ const Products = () => {
                         <span className='ml-20 mt-2'> ranges, sales, pop up stores and more</span></p>
                 </div>
                 <div className='flex justify-center mt-16 ml-4'>
-                    <div className='w-[354px] h-[56px] bg-[#F9F9F9] '>
-                        <input type="email" placeholder='your@email.com' className='w-[117px] h-[22px] ml-10 mt-4 text-sm' />
+                    <div>
+                        <input type="email"
+                            placeholder='your@email.com'
+                            className='flex-1 bg-gray-200  placeholder-[#2A254B]  px-20 py-4'
+                        />
                     </div>
                     <div>
                         <SignUp />

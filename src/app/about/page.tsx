@@ -205,7 +205,7 @@ function About() {
             {/* For Mobile Screen */}
             <div className="block lg:hidden">
                 <h3 className="text-3xl text-[#2A254B] ml-8">What makes our brand different</h3>
-            <div className='flex flex-col gap-7'>
+                <div className='flex flex-col gap-7'>
                     <div className=' h-[220px] bg-[#F9F9F9]'>
                         <FaTruckFast className='ml-10 mt-10 size-6' />
                         <h3 className='ml-10 mt-4 text-[#2A254B]'>Next day as standard</h3>
@@ -231,43 +231,45 @@ function About() {
             </div>
             {/* Last Section Finally */}
             <div className="hidden lg:block">
-            <div className=' h-[300px] bg-white mt-10'>
-                <div className='flex justify-center text-[#2A254B] text-3xl font-thin ml-20'>
-                    <p>Join the club and get the benefits</p>
-                </div>
-                <div className='flex justify-center text-[#2A254B] text-sm ml-20 mt-5'>
-                    <p>Sign up for our newsletter and receive exclusive offers on new <br />
-                        <span className='ml-20 mt-2'> ranges, sales, pop up stores and more</span></p>
-                </div>
-                <div className='flex justify-center mt-16 ml-4'>
-                    <div className='w-[354px] h-[56px] bg-[#F9F9F9] '>
-                        <input type="email" placeholder='your@email.com' className='w-[117px] h-[22px] ml-10 mt-4 text-sm' />
+                <div className=' h-[300px] bg-white mt-10'>
+                    <div className='flex justify-center text-[#2A254B] text-3xl font-thin ml-20'>
+                        <p>Join the club and get the benefits</p>
                     </div>
-                    <div>
-                        <SignUp />
+                    <div className='flex justify-center text-[#2A254B] text-sm ml-20 mt-5'>
+                        <p>Sign up for our newsletter and receive exclusive offers on new <br />
+                            <span className='ml-20 mt-2'> ranges, sales, pop up stores and more</span></p>
+                    </div>
+                    <div className='flex justify-center mt-16 ml-4'>
+                        <div className=''>
+                            <input type="email" 
+                            placeholder='your@email.com' 
+                            className='flex-1 bg-gray-200  placeholder-[#2A254B]  px-6 py-4' />
+                        </div>
+                        <div>
+                            <SignUp />
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             {/* For Mobile Screen */}
             <div className="block lg:hidden">
-            <div className=' h-[260px] bg-white mt-10'>
-                <div className='flex justify-center text-[#2A254B] text-2xl  ml-4'>
-                    <p>Join the club and get the benefits</p>
-                </div>
-                <div className='flex justify-center text-[#2A254B] text-sm  mt-5'>
-                    <p>Sign up for our newsletter and receive exclusive offers on new <br />
-                        <span className='ml-20 mt-2'> ranges, sales, pop up stores and more</span></p>
-                </div>
-                <div className='flex justify-center mt-16 ml-4'>
-                    <div className='w-[324px] h-[56px] bg-[#F9F9F9] '>
-                        <input type="email" placeholder='your@email.com' className='w-[117px] h-[22px] ml-10 mt-4 text-sm' />
+                <div className=' h-[260px] bg-white mt-10'>
+                    <div className='flex justify-center text-[#2A254B] text-2xl  ml-4'>
+                        <p>Join the club and get the benefits</p>
                     </div>
-                    <div>
-                        <SignUp />
+                    <div className='flex justify-center text-[#2A254B] text-sm  mt-5'>
+                        <p>Sign up for our newsletter and receive exclusive offers on new <br />
+                            <span className='ml-20 mt-2'> ranges, sales, pop up stores and more</span></p>
+                    </div>
+                    <div className='flex justify-center mt-16 ml-4'>
+                        <div className='w-[324px] h-[56px] bg-[#F9F9F9] '>
+                            <input type="email" placeholder='your@email.com' className='w-[117px] h-[22px] ml-10 mt-4 text-sm' />
+                        </div>
+                        <div>
+                            <SignUp />
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </main>
     )

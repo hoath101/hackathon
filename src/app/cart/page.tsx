@@ -1,69 +1,150 @@
-import Header from "@/components/header"
-import Image from "next/image"
+import Header from "@/components/header";
+import Image from "next/image";
 
 const Cart = () => {
   return (
-    <main className="">
+    <main>
       <Header />
-      <div className="bg-[#F9F9F9]">
-      <h1 className="pt-12 ml-12 lg:ml-64 text-2xl text-[#2A254B] font-light ">Your Shopping Cart</h1>
-      <div className="flex justify-around ml-10 mr-10 mt-10 items-center text-[#2A254B]">
-        <ul>Product</ul>
-        <ul>Quantity</ul>
-        <ul>Total</ul>
-      </div>
-        <hr className="mb-4 border-[#EBE8F4] mt-3 ml-10 mr-52 lg:ml-56"/>
-        <div className="flex justify-around text-[#2A254B] mr-16">
-          <div className="flex gap-4 w-[309px] h-[120px]">
-            <Image
-            src="/pictures/vase-1.jpg"
-            alt="Vase-image"
-            width={109}
-            height={134}
-            />
-            <div>
-              <h3 className="mt-2 text-lg">Graystone vase</h3>
-              <p className="text-xs mt-2 mb-3">A timeless ceramic vase with a tri color grey glaze.</p>
-              <ul>£85</ul>
+
+      <div className="bg-[#F9F9F9] min-h-screen pb-10">
+        <h1 className="pt-12 px-6 lg:px-64 text-2xl text-[#2A254B] font-light">
+          Your Shopping Cart
+        </h1>
+
+        {/* Desktop Table Header */}
+        <div className="hidden md:grid grid-cols-3 px-6 lg:px-64 mt-10 text-[#2A254B] font-medium">
+          <span>Product</span>
+          <span className="text-center">Quantity</span>
+          <span className="text-right">Total</span>
+        </div>
+
+        <hr className="border-[#EBE8F4] mt-3 mx-6 lg:mx-64" />
+
+        {/* PRODUCT 1 */}
+        <div className="px-6 lg:px-64 mt-6">
+          {/* Mobile Card */}
+          <div className="md:hidden bg-white p-4 rounded-lg shadow-sm border">
+            <div className="flex gap-4">
+              <Image
+                src="/pictures/vase-1.jpg"
+                alt="Vase"
+                width={90}
+                height={110}
+                className="rounded-md"
+              />
+
+              <div className="flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg font-medium text-[#2A254B]">
+                    Graystone Vase
+                  </h3>
+                  <p className="text-sm mt-1 text-gray-600">£85</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Quantity + Total Row */}
+            <div className="mt-4 flex justify-between text-[#2A254B] text-sm">
+              <p>Quantity: 1</p>
+              <p className="font-semibold">Total: £85</p>
             </div>
           </div>
-          <div>
-            1
+
+          {/* Desktop Row */}
+          <div className="hidden md:grid grid-cols-3 items-center text-[#2A254B]">
+            <div className="flex gap-4">
+              <Image
+                src="/pictures/vase-1.jpg"
+                alt="Vase-image"
+                width={109}
+                height={134}
+              />
+              <div>
+                <h3 className="text-lg">Graystone Vase</h3>
+                <p className="text-xs mt-2 mb-3">
+                  A timeless ceramic vase with a tri-color grey glaze.
+                </p>
+                <p>£85</p>
+              </div>
+            </div>
+
+            <p className="text-center">1</p>
+            <p className="text-right">£85</p>
           </div>
-          <div>£85</div>
         </div>
-        <div className="flex justify-around mt-3 mb-2 text-[#2A254B] mr-16">
-          <div className="flex gap-4 w-[309px] h-[120px]">
-            <Image
-            src="/pictures/vase.jpg"
-            alt="Vase-image"
-            width={109}
-            height={134}
-            className="w-[109px]"/>
-            <div className="">
-              <h3 className="mt-2 text-lg">Basic white vase</h3>
-              <p className="text-xs mt-2 mb-2">Beautiful and simple this is <br /> one for the classics</p>
-              <ul>£125</ul>
+
+        {/* PRODUCT 2 */}
+        <div className="px-6 lg:px-64 mt-6">
+          {/* Mobile Card */}
+          <div className="md:hidden bg-white p-4 rounded-lg shadow-sm border">
+            <div className="flex gap-4">
+              <Image
+                src="/pictures/vase.jpg"
+                alt="Vase"
+                width={90}
+                height={110}
+                className="rounded-md"
+              />
+
+              <div className="flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg font-medium text-[#2A254B]">
+                    Basic White Vase
+                  </h3>
+                  <p className="text-sm mt-1 text-gray-600">£125</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Quantity + Total Row */}
+            <div className="mt-4 flex justify-between text-[#2A254B] text-sm">
+              <p>Quantity: 1</p>
+              <p className="font-semibold">Total: £125</p>
             </div>
           </div>
-          <div>
-            1
+
+          {/* Desktop Row */}
+          <div className="hidden md:grid grid-cols-3 items-center text-[#2A254B] mt-4">
+            <div className="flex gap-4">
+              <Image
+                src="/pictures/vase.jpg"
+                alt="Vase-image"
+                width={109}
+                height={134}
+              />
+              <div>
+                <h3 className="text-lg">Basic White Vase</h3>
+                <p className="text-xs mt-2 mb-2">
+                  Beautiful and simple — one for the classics.
+                </p>
+                <p>£125</p>
+              </div>
+            </div>
+
+            <p className="text-center">1</p>
+            <p className="text-right">£125</p>
           </div>
-          <div>£125</div>
         </div>
-      <hr className="mb-4 border-[#EBE8F4] mt-4 ml-10 mr-52 lg:ml-56"/>
-      <div className="mr-10 lg:mr-48 text-[#2A254B]">
-        <h6 className="flex justify-end">Subtotal  £210</h6>
-        <p className="flex justify-end mt-2">Taxes and shipping are calculated at checkout</p>
-      </div>
-      <div className="flex justify-end mr-10 lg:mr-48 mt-4 mb-10">
-      <button className="w-[172px] h-[56px] bg-[#2A254B] text-white">
-        Go to checkout
-      </button>
-      </div>
+
+        <hr className="border-[#EBE8F4] mt-6 mx-6 lg:mx-64" />
+
+        {/* Subtotal */}
+        <div className="px-6 lg:px-64 text-[#2A254B] text-right mt-4">
+          <h6 className="text-lg font-semibold">Subtotal £210</h6>
+          <p className="mt-2 text-sm">
+            Taxes and shipping are calculated at checkout
+          </p>
+        </div>
+
+        {/* Checkout Button */}
+        <div className="flex justify-end px-6 lg:px-64 mt-6">
+          <button className="w-full md:w-[200px] h-[56px] bg-[#2A254B] text-white rounded-md">
+            Go to checkout
+          </button>
+        </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
