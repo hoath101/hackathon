@@ -1,5 +1,11 @@
+import { Metadata } from "next"
 import Header from "@/components/header";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Shopping Cart | Avion",
+  description: "Review and checkout your Avion shopping cart.",
+}
 
 const Cart = () => {
   return (

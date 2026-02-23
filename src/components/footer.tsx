@@ -22,7 +22,7 @@ const Footer = () => {
                             <ul className='mt-3'>Homeware</ul>
                             <ul className='mt-3'>Plant pots</ul>
                             <ul className='mt-3'>Chairs</ul>
-                            <ul className='mt-3'>Crockery</ul>
+                            <ul className='mt-3'>Ceramics</ul>
                         </div>
                         <div className='mt-10'>
                             <ul className='font-normal text-lg'>Our company</ul>
@@ -58,7 +58,7 @@ const Footer = () => {
                     </div>
                     <hr className='w-[1277] ml-10 fill-[#4E4D93]' />
                     <div className='flex justify-between mt-4 ml-10'>
-                        <p>Copyright 2022 Avion LTD</p>
+                        <p>Copyright {new Date().getFullYear()} Avion LTD</p>
                         <div className='flex gap-4 mr-40'>
                             <ul><FaLinkedin className='fill-white size-5' /></ul>
                             <ul><FaFacebookSquare className='fill-white size-5' /></ul>
@@ -94,7 +94,7 @@ const Footer = () => {
                                 <li>Homeware</li>
                                 <li>Plant pots</li>
                                 <li>Chairs</li>
-                                <li>Crockery</li>
+                                <li>Ceramics</li>
                             </ul>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ const Footer = () => {
                     </div>
                     <hr className="border-[#4E4D93] mt-10" />
                     <div className="flex justify-center mt-4">
-                        <p className="text-white text-xs">Copyright 2022 Avion LTD</p>
+                        <p className="text-white text-xs">Copyright {new Date().getFullYear()} Avion LTD</p>
                     </div>
                 </div>
             </div>

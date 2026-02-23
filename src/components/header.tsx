@@ -32,7 +32,7 @@ const Header = () => {
           <ul className='text-[#726E8D]'>Ceramics</ul>
           <ul className='text-[#726E8D]'>Tables</ul>
           <ul className='text-[#726E8D]'>Chairs</ul>
-          <ul className='text-[#726E8D]'>Crokery</ul>
+          <ul className='text-[#726E8D]'>Crockery</ul>
           <ul className='text-[#726E8D]'>Tableware</ul>
           <ul className='text-[#726E8D]'>Cutlery</ul>
         </div>

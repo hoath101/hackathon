@@ -1,5 +1,4 @@
 import Header from '@/components/header'
-import React from 'react'
 import Image from 'next/image'
 import Button, { Btn, SignUp } from '@/components/button'
 import { FaRegCircleCheck, FaTruckFast } from 'react-icons/fa6';
@@ -8,7 +7,7 @@ import { PiFlowerTulip } from 'react-icons/pi';
 
 const Home = () => {
   return (
-    <main className='max-w-maax mx-auto p-2 overflow-hidden'>
+    <main className='max-w-screen-2xl mx-auto p-2 overflow-hidden'>
       <Header />
       <div className='flex justify-center items-center'>
         <div className=''>
@@ -39,7 +38,7 @@ const Home = () => {
 
       <h2 className='text-center text-xl text-[#2A254B] mt-14'>What makes our brand different</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 ml-6">
-  <div className="flex flex-col ml-4 w-[300px]">
+  <div className="flex flex-col ml-4 w-full">
     <FaTruckFast className="text-[#2A254B] text-3xl" />
     <h3 className="mt-4 text-[#2A254B]">Next day as standard</h3>
     <p className="mt-2 text-sm text-[#2A254B]">
@@ -47,7 +46,7 @@ const Home = () => {
     </p>
   </div>
   
-  <div className="flex flex-col ml-4 w-[300px]">
+  <div className="flex flex-col ml-4 w-full">
     <FaRegCircleCheck className="text-[#2A254B] text-3xl " />
     <h3 className="mt-4 text-[#2A254B]">Made by true artisans</h3>
     <p className="mt-2 text-sm text-[#2A254B] ">
@@ -55,7 +54,7 @@ const Home = () => {
     </p>
   </div>
   
-  <div className="flex flex-col ml-4 w-[300px]">
+  <div className="flex flex-col ml-4 w-full">
     <IoPricetagsOutline className="text-[#2A254B] text-3xl " />
     <h3 className="mt-4 text-[#2A254B]">Unbeatable prices</h3>
     <p className="mt-2 text-sm text-[#2A254B] ">
@@ -63,7 +62,7 @@ const Home = () => {
     </p>
   </div>
   
-  <div className="flex flex-col ml-4 w-[300px]">
+  <div className="flex flex-col ml-4 w-full">
     <PiFlowerTulip className="text-[#2A254B] text-3xl " />
     <h3 className="mt-4 text-[#2A254B]">Recycled packaging</h3>
     <p className="mt-2 text-sm text-[#2A254B] ">
@@ -159,11 +158,9 @@ const Home = () => {
             ranges, sales, pop-up stores, and more
           </p>
         </div>
-        <div className='flex justify-center mt-10'>
-          <div className='w-[354px] h-[56px] bg-[#F9F9F9] flex items-center'>
-            <input type="email" placeholder='your@email.com' className='w-full p-4 text-sm' />
-          </div>
-          <div>
+        <div className='flex justify-center mt-10 px-4'>
+          <div className='flex w-full max-w-lg'>
+            <input type="email" placeholder='your@email.com' className='flex-1 bg-[#F9F9F9] p-4 text-sm' />
             <SignUp />
           </div>
         </div>
@@ -171,7 +168,7 @@ const Home = () => {
 
       <div className='w-full bg-[#F9F9F9] mt-10'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-14'>
-          <div className='w-full lg:w-[650px] text-[#505977] mt-10 ml-6 mr-10'>
+          <div className='w-full lg:max-w-xl text-[#505977] mt-10 ml-6 mr-10'>
             <p className='text-2xl mb-6'>From a studio in London to a global brand with over 400 outlets</p>
             <p className='text-sm '>
               When we started Avion, the idea was simple. Make high quality furniture affordable and available
@@ -188,7 +185,7 @@ const Home = () => {
             </div>
           </div>
           <div className='ml-5'>
-            <Image src="/pictures/jugar.jpg" alt="jugar" width={700} height={603} />
+            <Image src="/pictures/jugar.jpg" alt="Avion studio interior" width={700} height={603} className="w-full h-auto" />
           </div>
         </div>
       </div>
