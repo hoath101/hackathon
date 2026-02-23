@@ -11,13 +11,15 @@ const Home = () => {
       <Header />
       <div className='flex justify-center items-center'>
         <div className=''>
-          <div className='bg-[#2A254B] h-[563px] w-full md:w-[563px] flex flex-col justify-start items-start p-7'>
-            <p className='text-white text-2xl font-extralight '>
-              The furniture brand for the <br className='mt-5 mb-4' />
-              future, with timeless designs
-            </p>
-            <Button />
-            <p className='text-white mt-60 text-sm'>
+          <div className='bg-[#2A254B] min-h-[400px] lg:h-[563px] w-full md:w-[563px] flex flex-col justify-between items-start p-7'>
+            <div>
+              <p className='text-white text-2xl font-extralight '>
+                The furniture brand for the <br className='mt-5 mb-4' />
+                future, with timeless designs
+              </p>
+              <Button />
+            </div>
+            <p className='text-white text-sm'>
               A new era in eco-friendly furniture with Avelon, the French luxury retail brand
               with nice fonts, tasteful colors, and a beautiful way to display things digitally
               using modern web technologies.
@@ -38,31 +40,31 @@ const Home = () => {
 
       <h2 className='text-center text-xl text-[#2A254B] mt-14'>What makes our brand different</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 ml-6">
-  <div className="flex flex-col ml-4 w-full">
+  <div className="flex flex-col w-full">
     <FaTruckFast className="text-[#2A254B] text-3xl" />
     <h3 className="mt-4 text-[#2A254B]">Next day as standard</h3>
     <p className="mt-2 text-sm text-[#2A254B]">
       Order before 3pm and get your order the next day as standard
     </p>
   </div>
-  
-  <div className="flex flex-col ml-4 w-full">
+
+  <div className="flex flex-col w-full">
     <FaRegCircleCheck className="text-[#2A254B] text-3xl " />
     <h3 className="mt-4 text-[#2A254B]">Made by true artisans</h3>
     <p className="mt-2 text-sm text-[#2A254B] ">
       Handmade crafted goods made with real passion and craftsmanship
     </p>
   </div>
-  
-  <div className="flex flex-col ml-4 w-full">
+
+  <div className="flex flex-col w-full">
     <IoPricetagsOutline className="text-[#2A254B] text-3xl " />
     <h3 className="mt-4 text-[#2A254B]">Unbeatable prices</h3>
     <p className="mt-2 text-sm text-[#2A254B] ">
       For our materials and quality, you won’t find better prices anywhere
     </p>
   </div>
-  
-  <div className="flex flex-col ml-4 w-full">
+
+  <div className="flex flex-col w-full">
     <PiFlowerTulip className="text-[#2A254B] text-3xl " />
     <h3 className="mt-4 text-[#2A254B]">Recycled packaging</h3>
     <p className="mt-2 text-sm text-[#2A254B] ">
@@ -72,31 +74,31 @@ const Home = () => {
 </div>
 
       <h1 className='text-[#2A254B] text-xl mt-14 ml-4 lg:ml-16'>New ceramics</h1>
-      <div className='grid sm:grid-cols-1 lg:grid-cols-4 gap-4 mt-5 ml-7'>
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 mt-5 ml-7'>
         <div className='text-[#2A254B] '>
-          <Image src='/pictures/table.jpg' alt="table" height={375} width={305} 
-          className=' h-[375px] '
+          <Image src='/pictures/table.jpg' alt="table" height={375} width={305}
+          className='h-[200px] sm:h-[280px] lg:h-[375px] object-cover w-full'
           />
           <p>The Dandy chair</p>
           <span className='mt-3'>£250</span>
         </div>
         <div className='text-[#2A254B] '>
-          <Image src='/pictures/vase.jpg' alt="vase" height={375} width={305} 
-          className=' h-[375px]'
+          <Image src='/pictures/vase.jpg' alt="vase" height={375} width={305}
+          className='h-[200px] sm:h-[280px] lg:h-[375px] object-cover w-full'
           />
           <p>Rustic Vase Set</p>
           <span className='mt-3'>£155</span>
         </div>
         <div className='text-[#2A254B] '>
-          <Image src='/pictures/vase-1.jpg' alt="vase" height={375} width={305} 
-          className='h-[375px]'
+          <Image src='/pictures/vase-1.jpg' alt="vase" height={375} width={305}
+          className='h-[200px] sm:h-[280px] lg:h-[375px] object-cover w-full'
           />
           <p>The Silky Vase</p>
           <span className='mt-3'>£125</span>
         </div>
         <div className='text-[#2A254B] '>
-          <Image src='/pictures/lamp.jpg' alt="lamp" height={375} width={305} 
-          className='h-[375px]'
+          <Image src='/pictures/lamp.jpg' alt="lamp" height={375} width={305}
+          className='h-[200px] sm:h-[280px] lg:h-[375px] object-cover w-full'
           />
           <p>The Lucy Lamp</p>
           <span className='mt-3'>£399</span>
@@ -126,7 +128,7 @@ const Home = () => {
             alt='table'
             height={375}
             width={305}
-            className='h-[375px]'
+            className='h-[200px] sm:h-[280px] lg:h-[375px] object-cover w-full'
           />
           <p className='mt-3'>The Dandy chair</p>
           <span className='mt-3'>£250</span>
@@ -137,7 +139,7 @@ const Home = () => {
             alt='chair'
             height={375}
             width={305}
-            className='h-[375px]'
+            className='h-[200px] sm:h-[280px] lg:h-[375px] object-cover w-full'
           />
           <p className='mt-3'>The Dandy chair</p>
           <span className='mt-3'>£250</span>

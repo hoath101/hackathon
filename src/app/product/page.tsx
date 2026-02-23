@@ -24,7 +24,7 @@ const Products = () => {
                         alt="The Dandy Chair product image"
                         width={759}
                         height={603}
-                        className="w-full max-w-[700px] max-h-[500px] h-auto rounded-md lg:w-[470px] lg:ml-40"
+                        className="w-full lg:max-w-[500px] max-h-[500px] h-auto rounded-md"
                     />
                 </div>
                 <div className="w-full max-w-xl text-[#2A254B]">

@@ -23,7 +23,7 @@ function About() {
                 <div className="h-[132px] items-center">
                     <div className="h-[41px] bg-[#2A254B] text-white flex justify-end gap-4 text-sm">
                         <FaTruckFast className="fill-white mt-4" />
-                        <p className="mt-3 mr-80">
+                        <p className="mt-3 flex-1 text-center">
                             Free delivery on all orders over £50 with code easter checkout
                         </p>
                         <FiX className="fill-white text-xl mt-3 ml-10 mr-10" />
@@ -92,7 +92,7 @@ function About() {
 
             {/* It started with a small idea — responsive */}
             <div className="flex flex-col lg:flex-row justify-center gap-3 mt-8 px-6 lg:px-0">
-                <div className="bg-[#2A254B] w-full lg:w-[630px] lg:h-[478px] px-12 py-10">
+                <div className="bg-[#2A254B] w-full lg:w-[630px] lg:h-[478px] px-6 lg:px-12 py-10">
                     <p className="text-white text-3xl font-extralight">It started with a small idea</p>
                     <p className="text-white mt-4 mr-4">
                         A global brand with local beginnings, our story began in a small studio in South London in early 2014

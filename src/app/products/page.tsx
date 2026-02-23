@@ -42,7 +42,9 @@ const Blog = async () => {
     <main className="overflow-x-hidden">
       <Header />
       <div className="relative">
-        <h1 className="absolute text-white text-3xl mt-32 ml-12 font-extralight z-10">All products</h1>
+        <div className="absolute inset-0 flex items-center px-6 lg:px-12">
+          <h1 className="text-white text-2xl lg:text-3xl font-extralight">All products</h1>
+        </div>
         <Image src="/pictures/stool-1.png" alt="All products banner" width={1400} height={209} className="h-[209px] w-full object-cover"></Image>
       </div>
       <div className="bg-gray-100 p-2">
